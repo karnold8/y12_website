@@ -4,30 +4,26 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Ultra Bungee - Feel the fall!</title>
-    <button id="toggle">🌙/☀️</button>
-
-<script>
-  const btn = document.getElementById("toggle");
-  btn.addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark");   // <html class="dark">
-  });
-</script>
-
 </head>
 <body>
     <header>
         <a href="index.html"><img class="logo" src="img/logo.png" /></a>
         <nav>
-            <a href="index.html">HOME</a>
-            <a href="bridge.html">BRIDGE</a>
-            <a href="canyon.html">CANYON</a>
-            <a href="tower.html">TOWER</a>
-            <a href="gallery.html">GALLERY</a>
+            <ul> <!--<ul> and <li> tags adding during Section 3.1-->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="bridge.html">BRIDGE</a></li>
+                <li><a href="canyon.html">CANYON</a></li>
+                <li><a href="tower.html">TOWER</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>
         </nav>
     </header>
-    <img class="hero-img" src="img/ultra-bungee-hero.jpg"/>
-    <h1>Feel the fall with Ultra Bungee!</h1>
-    <a href="bridge.html" class="button">Bridge Jump</a><a href="canyon.html" class="button">Canyon Jump</a><a href="tower.html" class="button">Tower Jump</a>
+    <section id="intro"> <!--added in Section 3.1-->
+        <div class="intro-block"> <!--added in Section 3.1-->
+            <h1>Feel the fall with Ultra Bungee!</h1>
+            <a href="bridge.html" class="button">Bridge Jump</a><a href="canyon.html" class="button">Canyon Jump</a><a href="tower.html" class="button">Tower Jump</a>
+        </div>
+    </section>
     <footer>
         <p><small>&copy; Ultra Bungee 2021 - Website by Web Makers Inc.</small></p>
     </footer>
